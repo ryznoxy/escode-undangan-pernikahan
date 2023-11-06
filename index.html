@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="h-screen">
+    <div class="max-w-2xl mx-auto relative">
+        <div class="md:px-0 px-4">
+            <div class="  p-5 bg-white/20 rounded-full mt-5 backdrop-blur-md outline outline-1 outline-neutral-300 sticky ">
+            <div class="flex justify-between items-center mx-4">
+                <h1 class="font-gtw font-bold text-2xl">Iqbal & Tia</h1>
+            <button class="space-y-1 md:hidden flex flex-col" id="navBtn">
+                <img src="close.svg" width="32" alt="" class="hidden transition-all duration-300 ease-in-out" id="closeSvg">
+                <img src="menu.svg" width="32" alt="" class="transition-all duration-300 ease-in-out " id="menuSvg">
+                <!-- <span class="block bg-black w-6 h-[3px] rounded-full "></span>
+                <span class="block bg-black w-6 h-[3px] rounded-full "></span>
+                <span class="block bg-black w-6 h-[3px] rounded-full "></span> -->
+            </button>
+        <nav class="md:block hidden md:right-0 md:top-0 right-9 top-20 md:p-0 p-4 md:bg-transparent bg-white md:border-0 border border-2 rounded-lg transition-all duration-300 ease-in-out" id="navMenu">
+            <ul class="flex items-center gap-2" id="navNavMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <div class="flex flex-col justify-center items-center mt-44 p-5 ">
+        <h1 class="font-gtw text-6xl">Iqbal & Tia</h1>
+        <div class="space-y-2 text-center mt-4">
+            <h1 class=" text-xl">Akan segera melangsungkan pernikahan</h1>
+        <h1 class="text-pink-500 font-semibold text-xl">Sabtu , 28 November 2020</h1>
+        </div>
+        <div class="mt-12 flex justify-center items-center flex-col">
+            <div class="flex justify-center items-center gap-6 ">
+                <h1 class="flex items-end text-lg font-medium">21 <span class="text-xs">Hari</span></h1>
+                <h1 class="flex items-end text-lg font-medium">01 <span class="text-xs">Jam</span></h1>
+                <h1 class="flex items-end text-lg font-medium">12 <span class="text-xs">Menit</span></h1>
+                <h1 class="flex items-end text-lg font-medium">95 <span class="text-xs">Detik</span></h1>
+            </div>
+            <div class="mt-12">
+                <a href="#" class="px-6 py-4 bg-pink-700 rounded-full text-white">Lihat Undangan</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <script>
+        const btnMenu = document.getElementById('navBtn')
+        const navMenu = document.getElementById('navMenu')
+        const navNavMenu = document.getElementById('navNavMenu')
+        const close = document.getElementById('closeSvg')
+        const menu = document.getElementById('menuSvg')
+
+        btnMenu.addEventListener('click' , () => {
+            navMenu.classList.toggle('hidden')
+            navMenu.classList.toggle('absolute')
+            navNavMenu.classList.toggle('flex-col')
+            close.classList.toggle('hidden')
+            menu.classList.toggle('hidden')
+        })
+    </script>
+</body>
+</html>

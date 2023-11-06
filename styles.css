@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+.font-gtw {
+    font-family: 'Sacramento' , sans-serif;
+}
+
+body {
+    background-image: url(OK1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.activeBtn:nth-child(1) {
+    transform: rotate(45deg);
+}
